@@ -1,0 +1,117 @@
+#grid {
+    display: grid;
+    width: 100%;  
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  text-align: center;
+  gap: 3rem;
+
+    grid-template-columns: 50px 1fr;
+  }
+  
+  #areaA {
+    background-color: rgb(193, 201, 193);
+  }
+  
+  #areaB {
+    background-color: rgb(75, 75, 50);
+  }
+  
+  
+
+
+const Card = styled.div`
+  img {
+    width: min(500px, 100%);
+    border-radius: 2rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  h4 {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  div {
+  margin: 10rem inherit 5rem;
+  display: flex;}
+
+  @media (max-width: 1068px) {
+    flex-direction{
+        flex-shrink: inherit
+    } 
+  }
+
+  .active {
+    background: linear-gradient(35deg, #494949, #313131);
+    color: #fff;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    margin-top: 2rem;
+  }
+
+  li {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+
+  p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+
+  }
+
+
+.styled_button {
+  padding: 1rem 2rem;
+  color: #313131;
+  background: #fff;
+  border: 2px solid #000;
+  margin-right: 2rem;
+  font-weight: 600;
+}
+
+.info {
+  margin-left: 5rem;
+}
+
+form{
+  margin: 0 2rem;
+}
+  div {
+    position: relative;
+    width: min(550px, 100%);
+    margin: 0 auto;
+  }
+
+  input {
+    background: linear-gradient(35deg, #494949, #313131);
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+
+  svg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(100%, -50%);
+    color: #fff;
+  }
+`;
+
+
+  @media (max-width: 1068px) {
+    margin-top: 3rem;
+    margin-left: 1rem;
+  }
