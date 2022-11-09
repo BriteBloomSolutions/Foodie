@@ -14,13 +14,13 @@ code {
 /* CSS Custom Properties */
 :root {
   --white: #FFFFFF;
-  --tan-1: #FBF9F6;
-  --tan-2: #E7E2DD;
-  --tan-3: #E2D9D1;
-  --tan-4: #D3C1AE;
-  --orange: #F67F00;
-  --text-light: #968c84;
-  --text-dark: #615954;
+  --celery: #d5f381;
+  --avocado: #408507;
+  --celadon: #ACE1AF;
+  --lightgreen: #9EB477;
+  --orange: #fdb13f;
+  --text-light: #97806d;
+  --text-dark: #26461a;
 }
 
 *, *:before, *:after {
@@ -34,7 +34,7 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--tan-4);
+  background-color: var(--lightgreen);
   padding: 2vmin;
   height: 100vh;
 }
@@ -82,9 +82,9 @@ code {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--tan-1);
+  background-color: var(--celery);
   color: var(--text-dark);
-  border: .1vmin solid var(--tan-3);
+  border: .1vmin solid var(--celadon);
   border-radius: 1vmin;
   padding: .6vmin;
   text-align: center;
@@ -93,8 +93,8 @@ code {
 
 .form-container {
   padding: 3vmin;
-  background-color: var(--tan-1);
-  border: .1vmin solid var(--tan-3);
+  background-color: var(--celery);
+  border: .1vmin solid var(--celadon);
   border-radius: 1vmin;
 }
 
@@ -119,7 +119,7 @@ label {
 input {
   padding: 1vmin;
   font-size: 2vmin;
-  border: .1vmin solid var(--tan-3);
+  border: .1vmin solid var(--celadon);
   border-radius: .5vmin;
   color: var(--text-dark);
   background-image: none !important; /* prevent lastpass */
@@ -139,7 +139,7 @@ button, a.button {
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  border: .1vmin solid var(--tan-2);
+  border: .1vmin solid var(--avocado);
   border-radius: .5vmin;
   outline: none;
   cursor: pointer;
@@ -157,7 +157,7 @@ button.btn-xs {
 
 button:disabled, form:invalid button[type="submit"] {
   cursor: not-allowed;
-  background-color: var(--tan-4);
+  background-color: var(--lightgreen);
 }
 
 button[type="submit"] {
