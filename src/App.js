@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { getUser } from "./utilities/users-service";
@@ -12,24 +11,26 @@ import { ImSpoonKnife } from "react-icons/im";
 import Searched from "./pages/Searched";
 import Recipe from "./pages/Recipe";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+
 
 
 function App() {
   const [user, setUser] = useState(getUser());
   return (
     <main className="App">
-      <span>
-        {" "}
+      <div class="App-header">
         <ImSpoonKnife />
+        {"     "}
         <h1> Foodie </h1>
-      </span>
+      </div>
       {user ? (
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
             <Route path="/recipe/new" element={<Recipe />} />
             <Route path="/recipes" element={<Searched />} />
-            </Routes>            
+          </Routes>            
             <Search />
             <Category />
             <Pages />

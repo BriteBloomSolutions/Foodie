@@ -1,4 +1,4 @@
-import { FaPizzaSlice, FaHamburger } from "react-icons/fa";
+import { FaHamburger } from "react-icons/fa";
 import { GrGlobe } from "react-icons/gr";
 import {CiBowlNoodles} from "react-icons/ci"
 import {
@@ -26,8 +26,6 @@ import {
 import { TbSoup, TbJewishStar } from "react-icons/tb";
 import * as React from "react";
 import { NavLink } from "react-router-dom";
-// import { NavLink } from "react-router-dom";
-// import {List} from 'react-router-dom';
 import { styled } from "react";
 // let cuisineArray = [
 //   { name: "African"},
@@ -61,7 +59,7 @@ import { styled } from "react";
 // ];
 const Category = () => {
   return (
-    <nav>
+    <nav id="cuisineNav">
       <NavLink to="/cuisines/African">
         <GiAfrica />
         <h4>African</h4>

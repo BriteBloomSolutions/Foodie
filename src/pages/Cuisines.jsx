@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import {Grid} from 'react'
 
 
+
 const Cuisines = () => {
   const [cuisines, setCuisines] = useState([]);
   const params = useParams();
@@ -36,7 +37,7 @@ const Cuisines = () => {
     >
       {cuisines.map(({ id, title, image }) => (
         <div className="card" key={id}>
-          <Link to={`/recipe/${id}`}>
+          <Link to={`/recipes/${id}/information`}>
             <img src={image} alt={title} />
             <h4>{title}</h4>
           </Link>
