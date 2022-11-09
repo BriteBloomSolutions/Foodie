@@ -20,7 +20,7 @@ function App() {
   return (
     <main className="App">
       <div class="App-header">
-        <ImSpoonKnife />
+        <ImSpoonKnife class='logo'/>
         {"     "}
         <h1> Foodie </h1>
       </div>

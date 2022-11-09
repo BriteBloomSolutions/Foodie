@@ -22,7 +22,12 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  text-shadow: #334713;
+  text-shadow:1px 1px #334713;
+  box-shadow: 2px 2px #334713;
+}
+
+.logo{
+  text-shadow:1px 1px #334713;
 }
 
 .App-link {
