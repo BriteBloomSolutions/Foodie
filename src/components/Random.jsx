@@ -32,7 +32,7 @@ const Random = () => {
       <h3>Random Picks</h3>
       <Splide
         options={{
-          perPage: 4,
+          perPage: 8,
           arrows: false,
           pagination: false,
           drag: "free",

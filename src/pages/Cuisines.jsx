@@ -28,14 +28,14 @@ const Cuisines = () => {
   }, [params.type]);
 
   return (
-    <div class='grid'
+    <div className="grid"
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
       {cuisines.map(({ id, title, image }) => (
-        <div class="card" key={id}>
+        <div className="card" key={id}>
           <Link to={`/recipe/${id}`}>
             <img src={image} alt={title} />
             <h4>{title}</h4>
