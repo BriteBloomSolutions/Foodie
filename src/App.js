@@ -11,6 +11,8 @@ import Search from "./components/Search";
 import { ImSpoonKnife } from "react-icons/im";
 import Searched from "./pages/Searched";
 import Recipe from "./pages/Recipe";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -27,10 +29,10 @@ function App() {
           <Routes>
             <Route path="/recipe/new" element={<Recipe />} />
             <Route path="/recipes" element={<Searched />} />
+            </Routes>            
             <Search />
             <Category />
             <Pages />
-          </Routes>
           <ImSpoonKnife />
         </>
       ) : (

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/splide/dist/css/themes/splide-default.min.css";
+import '@splidejs/react-splide/css';
 import { Link } from "react-router-dom";
 
 
@@ -53,7 +52,7 @@ const Random = () => {
       >
         {random.map(({ title, id, image }) => (
           <SplideSlide key={id}>
-            <div class= "card" style='width:18rem'>
+            <div class= "card">
             <img class="card-img-top" src={image} alt={title} />
 
               <h5 class='card-title'>{title}</h5>
