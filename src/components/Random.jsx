@@ -29,11 +29,11 @@ const Random = () => {
   }, []);
   return (
     <div>
-      <h3>Random Picks</h3>
+      <h3>Random Recipes</h3>
       <Splide
         options={{
-          perPage: 8,
-          arrows: false,
+          perPage: 4,
+          arrows: true,
           pagination: false,
           drag: "free",
           gap: "5rem",
@@ -50,15 +50,16 @@ const Random = () => {
           },
         }}
       >
+       
         {random.map(({ title, id, image }) => (
           <SplideSlide key={id}>
-            <div class= "card">
+            <div class= "card">            
             <img class="card-img-top" src={image} alt={title} />
+ <Link to={`/recipe/${id}`}>
+              <h6 class='card-title'>{title}</h6></Link>
 
-              <h5 class='card-title'>{title}</h5>
               <div class= 'card-body'>
-              <Link to={`/recipe/${id}`}>
-              </Link>
+             
            </div> </div>
           </SplideSlide>
         ))}

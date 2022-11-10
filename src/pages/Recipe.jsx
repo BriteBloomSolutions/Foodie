@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import {button, Table} from 'bootstrap'
+import {button} from 'bootstrap'
 
 
 const Recipe = () => {
@@ -30,11 +30,11 @@ const Recipe = () => {
   }, []);
 
   return (
-    <div>
+    <div className="recipeCard">
       
       <div>
         <h2>{details.title}</h2>
-        <img src={details.image} alt={details.title} />
+        <img src={details.image} alt={details.title} id='recipeImage' />
       </div>
       <div class='info'>
         <button

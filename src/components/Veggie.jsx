@@ -40,10 +40,10 @@ const Veggie = () => {
           gap: "5rem",
           breakpoints: {
             767: {
-              perPage: 2,
+              perPage: 4,
             },
             640: {
-              perPage: 1,
+              perPage: 4,
             },
           },
         }}
@@ -53,7 +53,7 @@ const Veggie = () => {
             <div class='card'>
               <Link to={`/recipe/${id}`}>
                 <p>{title}</p>
-                <img src={image} alt={title} />
+                <img src={image} alt={title} className='recipethumbnail' />
               </Link>
             </div>
           </SplideSlide>

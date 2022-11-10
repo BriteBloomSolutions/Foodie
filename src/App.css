@@ -1,20 +1,17 @@
 .App {
-  text-align: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  text-align:center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 40vh;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: rgb(121, 151, 100);
+  background-color: #96af6f;
   max-height: 10vh;
   display: flex;
   flex-direction: row;
@@ -24,6 +21,9 @@
   color: white;
   text-shadow:1px 1px #334713;
   box-shadow: 2px 2px #334713;
+}
+.App-header > a{
+  color: #ffffff;
 }
 
 .logo{
@@ -44,16 +44,17 @@
 }
 
 .searchbox{
-  margin-left: 55vw;
+  margin-left: 25vw;
   display: flex;
   max-height: 4vh;
-  max-width: 5vw;
+  max-width: flex;
   flex-direction: row;
   padding-bottom: 5%;
   padding-top: 5%;
 }
  .searchbox> input{
-background-color: #e1e2df;
+background-color: #ffffff;
+position:inherit;
 }
 
 /* Navbar container */
@@ -76,43 +77,50 @@ background-color: #e1e2df;
 
 /* The dropdown container */
 .dropdown {
-  float:right;
-  overflow: hidden;
+  position: relative;
+  display: inline-block;
 }
 
-/* Dropdown button */
+/* Cuisine button */
 .dropdown .dropbtn {
-  border: none;
-  text-shadow: 2px 2px #334713;
+border-radius: 5px;  
+text-shadow: 2px 2px #334713;
   color: white;
-  padding: 14px 16px;
-  background-color: inherit;
+  padding: 1vw 1vh;
+  background-color: #96af6f;
   font-family: inherit; /* Important for vertical align on mobile phones */
-  margin-left: 32vw; /* Important for vertical align on mobile phones */
+  /* margin-left: 5vw; Important for vertical align on mobile phones */
+  cursor: pointer;
+  width: 80vw;
+  height: 10vw;
 }
 
 /* Add a  background color to navbar links on hover */
 .navbar a:hover, .dropdown:active .dropbtn {
   background-color: rgb(0, 0, 0);
 }
+.dropdown:hover .dropbtn {
+  background-color: #bcc2bc;
+}
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
-  display:none;
+  display: none;
   position: absolute;
+  right: 0;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(255, 211, 211, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  float: none;
+  float:none;
   color: rgb(121, 151, 100);
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   text-align: left;
 }
 
@@ -124,14 +132,25 @@ background-color: #e1e2df;
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: contents;
+  float:inline-end;
+  overflow:scroll;
 }
 
 h1{
-  color: #f9f9f9;
+  color: #ffffff;
 }
 h2{
-  color: #f9f9f9;
+  color: #4a661c;
 }
 h3{
-  color: #f9f9f9;
+  color: #355a24;
+}
+ul{
+  list-style-type: disc;
+}
+li{
+  list-style-type:none;
+}
+.recipeCard{
+  background-color: #e1e2df;
 }

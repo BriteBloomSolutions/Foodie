@@ -12,7 +12,7 @@ import Searched from "./pages/Searched";
 import Recipe from "./pages/Recipe";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-
+import Link from 'react'
 
 
 function App() {
@@ -21,18 +21,18 @@ function App() {
     <main className="App">
       <div class="App-header">
         <ImSpoonKnife class='logo'/>
-        {"     "}
-        <h1> Foodie </h1>
+        <a href= '/'><h1> Foodie </h1></a>
       </div>
       {user ? (
         <>
-          <NavBar user={user} setUser={setUser} />
+          <NavBar user={user} setUser={setUser} /> 
+           
           <Routes>
             <Route path="/recipes/:id/information/" element={<Recipe />} />
             <Route path="/recipes" element={<Searched />} />
             {/* <Route path=`/recipes/${id}` element={<RecipeID />} /> */}
           </Routes>            
-            <Search />
+          
             <Category />
             <Pages />
           <ImSpoonKnife />

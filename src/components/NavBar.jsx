@@ -1,7 +1,7 @@
 import {Link, NavLink} from 'react-router-dom';
 import "./NavBar.css";
 import * as userService from "../utilities/users-service";
-
+import Search from '../components/Search'
 
 
 const NavBar = ({ user, setUser }) => {
@@ -19,6 +19,7 @@ const NavBar = ({ user, setUser }) => {
     {/* <NavLink to="/recipe/new/"> New Recipe </NavLink>   */}
     &nbsp;&nbsp;<span>Welcome, {user.name}</span>
 &nbsp;&nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
+<Search />
     </nav>  
    
   );

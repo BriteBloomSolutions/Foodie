@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -135,12 +134,12 @@ button, a.button {
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
-  background-color: var(--orange);
+  background-color: var(--avocado);
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  border: .1vmin solid var(--avocado);
+  border: .1vmin solid var(--celery);
   border-radius: .5vmin;
   outline: none;
   cursor: pointer;
@@ -179,4 +178,9 @@ h4 {
 
 a {
   color: rgb(56, 56, 56);
+}
+
+#recipeImage{
+  max-width: 50vw;
+  max-height: 50vh
 }
