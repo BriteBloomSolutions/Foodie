@@ -1,8 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import {styled} from 'react'
-import {Button, Table} from 'bootstrap'
+import {button, Table} from 'bootstrap'
 
 
 const Recipe = () => {
@@ -28,27 +27,28 @@ const Recipe = () => {
     return () => {
       isMounted = false;
     };
-  }, [fetchDetails, params.id]);
+  }, []);
 
   return (
     <div>
+      
       <div>
         <h2>{details.title}</h2>
         <img src={details.image} alt={details.title} />
       </div>
       <div class='info'>
-        <Button
+        <button
           className={activeTab === "ingredients" ? "active" : ""}
           onClick={() => setActiveTab("ingredients")}
         >
           Ingredients
-        </Button>
-        <Button
+        </button>
+        <button
           className={activeTab === "instructions" ? "active" : ""}
           onClick={() => setActiveTab("instructions")}
         >
           Instructions
-        </Button>
+        </button>
         {activeTab === "ingredients" && (
           <ul>
             {details.extendedIngredients.map(({ id, original }) => (

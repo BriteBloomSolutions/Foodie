@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'build')))
 
 // API Routes
 app.use('/api/users', require('./routes/api/users'))
-
+app.get('./routes/api/recipes')
 
 // Catch All to serve the production app
 app.get('/*', (req, res) => {

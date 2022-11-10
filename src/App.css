@@ -14,8 +14,8 @@
 }
 
 .App-header {
-  background-color: #d0fa8d;
-  min-height: 10vh;
+  background-color: rgb(121, 151, 100);
+  max-height: 10vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -41,4 +41,97 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.searchbox{
+  margin-left: 55vw;
+  display: flex;
+  max-height: 4vh;
+  max-width: 5vw;
+  flex-direction: row;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+ .searchbox> input{
+background-color: #e1e2df;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: rgb(217, 228, 190);
+  font-family: Helvetica, sans-serif;
+  color:#ffffff
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float:right;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  border: none;
+  text-shadow: 2px 2px #334713;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin-left: 32vw; /* Important for vertical align on mobile phones */
+}
+
+/* Add a  background color to navbar links on hover */
+.navbar a:hover, .dropdown:active .dropbtn {
+  background-color: rgb(0, 0, 0);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 211, 211, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: rgb(121, 151, 100);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: contents;
+}
+
+h1{
+  color: #f9f9f9;
+}
+h2{
+  color: #f9f9f9;
+}
+h3{
+  color: #f9f9f9;
 }

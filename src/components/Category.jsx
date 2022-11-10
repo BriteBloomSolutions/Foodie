@@ -60,7 +60,10 @@ import { styled } from "react";
 // ];
 const Category = () => {
   return (
-    <nav id="cuisineNav">
+    <div class='navbar'>
+       < div class id="cuisineNav" className="dropdown">
+      <button class='dropbtn'> <h3>Cuisine</h3> <i class="fa fa caret-down"></i></button>
+      <div class='dropdown-content'>
       <NavLink to="/cuisines/African">
         <GiAfrica />
         <h4>African</h4>
@@ -165,7 +168,9 @@ const Category = () => {
         <CiBowlNoodles />
         <h4>Vietnamese</h4>
       </NavLink>
-    </nav>
+      </div>
+    </div>
+    </div>
   );
 };
 

@@ -37,7 +37,7 @@ const Cuisines = () => {
     >
       {cuisines.map(({ id, title, image }) => (
         <div className="card" key={id}>
-          <Link to={`/recipes/${id}/information`}>
+          <Link to={`/recipes/${id}/information?includeNutrition=false`}>
             <img src={image} alt={title} />
             <h4>{title}</h4>
           </Link>

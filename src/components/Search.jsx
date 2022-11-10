@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { FaSearch } from "react-icons/fa";
+import { RiSearchLine } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
-
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -14,13 +13,13 @@ const Search = () => {
 
   return (
     <form onSubmit={submitHandler}>
-      <div>
-        <FaSearch />
+      <div className="searchbox">
         <input
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
+        <RiSearchLine />
       </div>
     </form>
   );

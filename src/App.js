@@ -28,8 +28,9 @@ function App() {
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
-            <Route path="/recipe/new" element={<Recipe />} />
+            <Route path="/recipes/:id/information/" element={<Recipe />} />
             <Route path="/recipes" element={<Searched />} />
+            {/* <Route path=`/recipes/${id}` element={<RecipeID />} /> */}
           </Routes>            
             <Search />
             <Category />
