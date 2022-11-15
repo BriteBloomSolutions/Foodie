@@ -6,14 +6,11 @@ import NavBar from "./components/NavBar";
 import "./App.css";
 import Pages from "./pages/Pages";
 import Category from "./components/Category";
-import Search from "./components/Search";
 import { ImSpoonKnife } from "react-icons/im";
 import Searched from "./pages/Searched";
 import Recipe from "./pages/Recipe";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Link from 'react'
-
 
 function App() {
   const [user, setUser] = useState(getUser());

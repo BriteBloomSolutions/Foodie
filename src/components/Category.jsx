@@ -27,7 +27,6 @@ import {
 import { TbSoup, TbJewishStar } from "react-icons/tb";
 import * as React from "react";
 import { NavLink } from "react-router-dom";
-import { styled } from "react";
 // let cuisineArray = [
 //   { name: "African"},
 //   { name: "American" },

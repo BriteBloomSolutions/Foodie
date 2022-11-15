@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import { Link, useParams } from "react-router-dom";
-import {Grid} from 'react'
 
 
 

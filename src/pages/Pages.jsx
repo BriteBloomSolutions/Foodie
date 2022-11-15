@@ -3,7 +3,6 @@ import Home from "./Home";
 import Cuisines from "./Cuisines";
 import Searched from "./Searched";
 import Recipe from "./Recipe";
-import { motion, AnimatePresence } from "framer-motion";
 
 const Pages = () => {
   const location = useLocation();
