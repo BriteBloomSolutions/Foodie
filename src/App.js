@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import { getUser } from "./utilities/users-service";
 import AuthPage from "./pages/AuthPage";
 import NavBar from "./components/NavBar";
-import "./App.css";
 import Pages from "./pages/Pages";
 import Category from "./components/Category";
 import { ImSpoonKnife } from "react-icons/im";
@@ -16,8 +15,8 @@ function App() {
   const [user, setUser] = useState(getUser());
   return (
     <main className="App">
-      <div class="App-header">
-        <ImSpoonKnife class='logo'/>
+      <div className="App-header">
+        <ImSpoonKnife className='logo'/>
         <a href= '/'><h1> Foodie </h1></a>
       </div>
       {user ? (
